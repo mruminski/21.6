@@ -1,0 +1,23 @@
+{
+  "name": "216",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mruminski/21.6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mruminski/21.6/issues"
+  },
+  "homepage": "https://github.com/mruminski/21.6#readme",
+  "devDependencies": {
+    "mongoose": "^5.3.13"
+  }
+}
