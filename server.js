@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
 mongoose.connect(
-  "mongodb://localhost/nodeappdatabase",
+  "mongodb://mruminski:test123@ds115094.mlab.com:15094/module21",
   { useMongoClient: true }
 );
 
@@ -99,7 +99,7 @@ const updateUserPassword = () =>
     });
   });
 
-const updateUsername = () =>
+const updateUsername = () => {
   User.findOneAndUpdate(
     { username: "joedoe" },
     { username: "joe.doe" },
@@ -109,6 +109,7 @@ const updateUsername = () =>
       console.log("Username changed", user.name);
     }
   );
+};
 
 const findMarkAndDelete = () =>
   User.findOne({ username: "marksmith" }).then(function(user) {
@@ -131,7 +132,7 @@ const findJoeAndDelete = () =>
     });
   });
 
-Promise.all([mark.save(), tom.save(), joe.save()])
+Promise.all([matt.save(), mark.save(), tom.save(), joe.save()])
   .then(findAllUsers)
   .then(findSpecificRecord)
   .then(updateUserPassword)
