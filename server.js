@@ -106,7 +106,7 @@ const updateUsername = () =>
     { new: true },
     function(err, user) {
       if (err) throw err;
-      console.log("Username changed", user.username);
+      console.log("Username changed", user.name);
     }
   );
 
