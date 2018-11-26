@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +18,7 @@
     "url": "https://github.com/mruminski/21.6/issues"
   },
   "homepage": "https://github.com/mruminski/21.6#readme",
-  "devDependencies": {
+  "dependencies": {
     "mongoose": "^5.3.13"
   }
 }
