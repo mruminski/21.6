@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
+mongoose.set("useFindAndModify", false);
 mongoose.connect(
   "mongodb://mruminski:test123@ds115094.mlab.com:15094/module21",
-  { useMongoClient: true }
+  { useNewUrlParser: true }
 );
 
 const userSchema = new Schema({
